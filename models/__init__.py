@@ -1,1 +1,1 @@
-from . import department, major
+from . import department, major, teacher

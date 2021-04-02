@@ -16,5 +16,7 @@ class Teacher(models.Model):
         ('female', 'Female'),
         ('orther', 'Orther'),
     ], required=True, default='male',)
+    age = fields.Integer(string='Age')
     coefficient_teacher = fields.Float(string='Coefficient Teacher', required=True)
-
+    name_department = fields.Many2one('department', string="Tên khoa")
+    id_department = fields.Char(string='Mã khoa', related='name_department.id_department')
