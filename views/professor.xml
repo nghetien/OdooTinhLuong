@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="payroll_teacher_professor_action" model="ir.actions.act_window">
+            <field name="name">Giảng viên</field>
+            <field name="res_model">teacher</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p clas="oe_view_nocontent_create">
+                    Tạo mới môn học ở đây!
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_payroll_teacher_professor">
+            <field name="name">Danh sách giảng viên</field>
+            <field name="model">teacher</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Professor">
+                    <field name="id_teacher"/>
+                    <field name="name_teacher"/>
+                    <field name="gender"/>
+                    <field name="coefficient_teacher"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <menuitem id="payroll_teacher_professor" 
+                name="Giảng viên"
+                action="payroll_teacher_professor_action"
+                parent="payroll_teacher_root"
+                sequence="10"/>
+</odoo>
