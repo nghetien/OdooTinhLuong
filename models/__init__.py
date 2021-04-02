@@ -1,1 +1,1 @@
-from . import department, major, teacher
+from . import department, major, teacher, coefficient_teacher, coefficient_subject, subject

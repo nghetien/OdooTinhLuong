@@ -36,13 +36,18 @@
             </field>
         </record>
 
-        <menuitem id="payroll_teacher_department_root" 
-                name="Khoa và Nghành"
+        <menuitem id="payroll_teacher_root"
+                name="Tính lương giáo viên"
+                sequence="10"/>
+
+        <menuitem id="payroll_teacher_department_major_root"
+                name="Khoa và Ngành"
+                parent="payroll_teacher_root"
                 sequence="10"/>
 
         <menuitem id="payroll_teacher_department" 
                 name="Khoa"
                 action="payroll_teacher_department_action"
-                parent="payroll_teacher_department_root"
+                parent="payroll_teacher_department_major_root"
                 sequence="10"/>
 </odoo>

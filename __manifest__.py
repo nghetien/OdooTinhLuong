@@ -12,6 +12,10 @@
     'data': [
         'views/department.xml',
         'views/major.xml',
+        'views/professor.xml',
+        'views/coefficient_teacher.xml',
+        'views/coefficient_subject.xml',
+        'views/subject.xml',
     ],
     'demo': [],
     'qweb': [],
