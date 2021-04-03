@@ -16,6 +16,8 @@
         'views/coefficient_teacher.xml',
         'views/coefficient_subject.xml',
         'views/subject.xml',
+        'views/semester.xml',
+        'views/course.xml',
     ],
     'demo': [],
     'qweb': [],
