@@ -27,26 +27,28 @@
             <field name="arch" type="xml">
                 <tree string="Course">
                     <field name="id_course"/>
-                    <field name="name_course"/>
                     <field name="semester"/>
-                    <field name="name_teacher"/>
+                    <field name="teacher"/>
                     <field name="rank_teacher"/>
-                    <field name="coefficient_teacher"/>
-                    <field name="name_subject"/>
-                    <field name="rank_subject"/>
-                    <field name="coefficient_subject"/>
+                    <field name="subject"/>
+                    <field name="credit"/>
+                    <field name="teaching_time"/>
+                    <field name="number_of_students"/>
                 </tree>
             </field>
         </record>
 
-        <menuitem id="payroll_teacher_root"
-                name="Tính lương giáo viên"
+        <menuitem id="payroll_teacher_setup_root"
+                name="GV và Môn học"
                 sequence="10"/>
+
+        <menuitem id="payroll_teacher_course_root"
+                parent="payroll_teacher_setup_root"
+                        name="Lớp học"/>
 
 
         <menuitem id="payroll_teacher_course" 
                 name="Lớp học"
                 action="payroll_teacher_course_action"
-                parent="payroll_teacher_root"
-                sequence="10"/>
+                parent="payroll_teacher_course_root"/>
 </odoo>

@@ -39,14 +39,14 @@
             </field>
         </record>
 
-        <menuitem id="payroll_teacher_root"
-                name="Tính lương giáo viên"
+        <menuitem id="payroll_teacher_setup_root"
+                name="GV và Môn học"
                 sequence="10"/>
 
 
         <menuitem id="payroll_teacher_professor" 
                 name="Giảng viên"
                 action="payroll_teacher_professor_action"
-                parent="payroll_teacher_root"
+                parent="payroll_teacher_setup_root"
                 sequence="10"/>
 </odoo>

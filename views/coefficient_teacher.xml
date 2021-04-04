@@ -33,13 +33,13 @@
             </field>
         </record>
 
-        <menuitem id="payroll_teacher_root"
-                name="Tính lương giáo viên"
+        <menuitem id="payroll_teacher_setup_root"
+                name="GV và Môn học"
                 sequence="10"/>
 
         <menuitem id="payroll_teacher_coefficient_root"
                 name="Hệ số"
-                parent="payroll_teacher_root"
+                parent="payroll_teacher_setup_root"
                 sequence="10"/>
 
         <menuitem id="payroll_teacher_coefficient_professor" 
