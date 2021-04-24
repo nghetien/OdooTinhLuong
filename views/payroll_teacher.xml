@@ -62,7 +62,7 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="view_payroll_teacher_professor">
+        <record model="ir.ui.view" id="view_payroll_teacher">
             <field name="name">Tính lương giảng viên</field>
             <field name="model">payroll.teacher</field>
             <field name="arch" type="xml">
@@ -72,7 +72,6 @@
                     <field name="semester"/>
                     <field name="time"/>
                     <field name="pay_check"/>
-                    <field name="sum_cost"/>
                 </tree>
             </field>
         </record>
